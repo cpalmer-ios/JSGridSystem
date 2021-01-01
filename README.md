@@ -3,7 +3,7 @@
 JS Grid System - Homeppl - Chris Woolf 01.01.2021
 
 
-This test requires no reeal dependencies.
+<b>requires no dependencies or installation.</b>
 
 You can just open your browser at the path of demo.html after downloading to your machine:
 
@@ -13,7 +13,7 @@ file:///Users/{your_username}/path/to/folder/Homeppl-JSGrid/demo-template/demo.h
 and the code should run.
 
 
-Building the grid.
+Building the grid functionality.
 
 Please refer to the text on the homepage for a descriptiion on how to edit the JSON data for your requirements.
 
@@ -113,3 +113,12 @@ HTML:
   <div class="jsgrid_item"></div> - will be width 5
   <div class="jsgrid_item"></div> - will be width 5
   <div class="jsgrid_item"></div> - will be width 4
+
+
+
+
+
+
+  Thanks and hope you like it !
+
+  Chris Woolf
