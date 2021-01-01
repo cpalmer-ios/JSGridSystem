@@ -25,7 +25,7 @@
             "columns": 12
           },
         ],
-        "blocks": [8,4]
+        "blocks": [1, 8, 2, 1]
     }
 
       /* CONSTRUCT GRID */

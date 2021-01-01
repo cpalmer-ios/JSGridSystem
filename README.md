@@ -1,6 +1,6 @@
 # JSGridSystem
 
-JS Grid System - Homeppl - Chris Woolf 01.01.2021
+## JS Grid System - Homeppl - Chris Woolf 01.01.2021
 
 
 <b>requires no dependencies or installation.</b>
@@ -13,55 +13,78 @@ file:///Users/{your_username}/path/to/folder/Homeppl-JSGrid/demo-template/demo.h
 and the code should run.
 
 
-Building the grid functionality.
-
-Please refer to the text on the homepage for a descriptiion on how to edit the JSON data for your requirements.
-
+## Building a Grid 
 
 The code uses a bootstrap like functionality to implement the 12-column system.
 
 The set number of columns (default is 12) can be changed to whatever you want.
 
-The blocks are individually colourd to show the space they take up on the screen.
+The blocks in the example are individually coloured to show the space they occupy take up on the screen.
 
-
-
-
-
-
-
-Any text you set in side the blocks in the HTML is copied over to the JS and redistributed back to the HTML.
+### Grids can be fetched with HTML and rendered with a JSON config:
 
 inside the JSON configuratiion you can change the block widths by using the blocks array:
 
+For example if you set: 
 
-For example if you set responsive: {
-  columns: 6
-}
+##### JSON config
+
+```
+{
+        "id": "#grid",
+        "dimensions": {
+          "height": "200",
+          "margin": "0",
+          "minHeight": "100",
+          "maxHeight": "300"
+        },
+        "animations": {
+        "fadeInSpeed": "500"
+        },
+        "style": {
+          "background": "random",
+          "borderRadius": "5"
+        },
+        "responsive": [
+          {
+            "breakpoint": 1440,
+            "columns": 12
+          },
+          {
+            "breakpoint": 1440,
+            "columns": 12
+          },
+        ],
+        "blocks": [1, 11, 1]
+    }
+
+```
+
+blocks could also be [3, 2, 1] or [ 5,5,2 ].
 
 
+The HTML <b>must</b> also reflect the relative number of blocks needed to fill the maximum number of columns ...
 
 
-
-
-
-blocks can be [3, 2, 1]
-
-The HTML Must also reflect this however....
-
-
+##### HTML / JSON setup
+```
   <div class="jsgrid_item"></div> - will be width 3
   <div class="jsgrid_item"></div> - will be width 1
   <div class="jsgrid_item"></div> - will be width 2
 
-  If not, the grid will still try to run with the items it can find and store into an array.
+```
 
+If grid items or blocks or both are too many... the grid will still return thee correct number of items to fill the maximum number of columns.
 
+If there are not enough jsgrid_items in the HTML then the blocks that exist will still be added to the grid with their correct sizes.
+
+Any text you set in side the blocks in the HTML is copied over to the JS and redistributed back to the HTML.
 
 Another example of the JSON HTML block configuration would be this:
 
-
-JSON: {
+###### JSON: 
+```
+      {
     ...
 responsive: {
   columns: 12
@@ -71,9 +94,13 @@ blocks: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 ...
   }
 
-HTML:
+```
 
 
+###### HTML:
+
+```
+
   <div class="jsgrid_item"></div> - will be width 1
   <div class="jsgrid_item"></div> - will be width 1
   <div class="jsgrid_item"></div> - will be width 1
@@ -87,7 +114,7 @@ HTML:
   <div class="jsgrid_item"></div> - will be width 1
   <div class="jsgrid_item"></div> - will be width 1
 
-
+```
 
 
 
@@ -95,7 +122,9 @@ HTML:
 Another would be this:
 
 
-JSON: {
+###### JSON: 
+```
+      {
     ...
 responsive: {
   columns: 24
@@ -104,21 +133,18 @@ blocks: [5, 5, 5, 5, 4]
 
 ...
   }
+```
 
-HTML:
+###### HTML:
 
-
+```
   <div class="jsgrid_item"></div> - will be width 5
   <div class="jsgrid_item"></div> - will be width 5
   <div class="jsgrid_item"></div> - will be width 5
   <div class="jsgrid_item"></div> - will be width 5
   <div class="jsgrid_item"></div> - will be width 4
+```
 
+Thanks and hope you like it !
 
-
-
-
-
-  Thanks and hope you like it !
-
-  Chris Woolf
+Chris Woolf
