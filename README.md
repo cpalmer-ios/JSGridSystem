@@ -1,6 +1,6 @@
 # JSGridSystem
 
-## JS Grid System - Homeppl - Chris Woolf 01.01.2021
+## JS Grid System - Chris Woolf 01.01.2021
 
 
 <b>requires no dependencies or installation.</b>
