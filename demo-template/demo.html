@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JSGridSystem - Homeppl</title>
+    <link rel="stylesheet" type="text/css" href="../css/jsgrid.css">
+  </head>
+  <body>
+        
+    <header>
+      <div style="background-color: #7292a6; color: white; font-size: 1.5rem;">
+        <div class="container">
+          <p>JSGrid System</p>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+
+      <div class="">
+        
+        <div>
+          <div class="">
+            <h1 class="">Create Grid</h1>
+          </div>
+
+          <pre id="JSON">
+          </pre>
+
+          <!-- JSGrid - Create Grid -->
+          <div id="grid" class="jsgrid_grid grid" > 
+              <div class="jsgrid_item"></div>
+              <div class="jsgrid_item"></div>
+              <div class="jsgrid_item"></div>
+              <div class="jsgrid_item"></div>
+              <div class="jsgrid_item"></div>
+              <div class="jsgrid_item"></div>
+          </div>
+          <button id="initialize" class="">Go</button>
+        </div>
+
+        <h4></h4>add your basic HTML setup:
+        <pre>
+            //index.html
+            &lt;div id="grid" class="jsgrid_grid grid" &gt; 
+              &lt;div class="jsgrid_item"&gt;&lt;/div&gt;
+              &lt;div class="jsgrid_item"&gt;&lt;/div&gt;
+              &lt;div class="jsgrid_item"&gt;&lt;/div&gt; 
+          &lt;/div&gt;
+          (jsgrid_items must be equal to the number of columns defined.)
+        </pre>
+
+        <h4></h4>import your grid preferences from JSON
+        <pre>
+            //main.js
+
+            ...
+
+            const JSON =  {
+               "id": "#grid",               - ID of the grid element
+               "dimensions": {    
+                 "height": "200",           - height in pixels
+                 "margin": "0",             - margin
+                 "minHeight": "100",        - minHeight per column
+                 "maxHeight": "300"         - maxHeight per column
+               },
+               "animations": {              - animation attributes
+               "fadeInSpeed": "500"         - fade in speed
+               },
+               "style": {
+                 "background": "random",    - creates random background colours
+                 "borderRadius": "5"        - border styling
+               },
+               "responsive": [
+                 {
+                   "breakpoint": 1440,      - set screen breakpoints
+                   "columns": 12            - set max columns here
+                 }
+               ], 
+               "blocks": [8, 2, 2]          - define block configuration here ( must equal 12)
+           }
+
+            ...
+       
+       
+            </pre>
+        </code>
+      </div>
+    </main> 
+  </body>
+
+  <script src="../js/jsgrid.js"></script>
+  <script src="../js/main.js"></script>
+  </html>
