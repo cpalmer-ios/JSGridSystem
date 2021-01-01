@@ -32,15 +32,11 @@
           <div id="grid" class="jsgrid_grid grid" > 
               <div class="jsgrid_item"></div>
               <div class="jsgrid_item"></div>
-              <div class="jsgrid_item"></div>
-              <div class="jsgrid_item"></div>
-              <div class="jsgrid_item"></div>
-              <div class="jsgrid_item"></div>
           </div>
           <button id="initialize" class="">Go</button>
         </div>
 
-        <h4></h4>add your basic HTML setup:
+        <h4>add your basic HTML setup:</h4>
         <pre>
             //index.html
             &lt;div id="grid" class="jsgrid_grid grid" &gt; 
@@ -51,7 +47,7 @@
           (jsgrid_items must be equal to the number of columns defined.)
         </pre>
 
-        <h4></h4>import your grid preferences from JSON
+        <h4>Import your grid preferences from JSON</h4>
         <pre>
             //main.js
 
@@ -86,6 +82,28 @@
        
             </pre>
         </code>
+      </div>
+
+      <h4>Or just use HTML / CSS:</h4>
+
+      <pre>
+        //index.html
+        &lt;div class="jsgrid_grid grid" &gt; 
+          &lt;div class="jsgrid_grid_row" &gt; 
+            &lt;div class="jsgrid_block w-8"&gt;&lt;/div&gt;
+            &lt;div class="jsgrid_block w-4"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      width is set with the w-{number} class. ie. w-1 is 1 of 12
+    </pre>
+
+      <div class="jsgrid_grid grid" >
+        <div style="padding-left:0px; width:100%" class="jsgrid_row">
+          <div style="background-color: rgb(34, 97, 2); height: 200px;" class="jsgrid_block w-8"></div>
+          <div style="background-color: rgb(32, 143, 215); height: 200px;" class="jsgrid_block w-4"></div>
+        </div>
+      </div>
+
       </div>
     </main> 
   </body>

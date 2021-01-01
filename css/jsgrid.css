@@ -40,7 +40,8 @@ body {
 .jsgrid_row
 {
 	position:relative;
-	display: inline-flex;
+  display: inline-flex;
+  width: 100%;
 }
 .jsgrid_grid
 {
