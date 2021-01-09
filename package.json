@@ -1,6 +1,6 @@
 {
   "name": "js-grid-system",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple and lightweight framework in vanilla js.",
   "main": "index.js",
   "scripts": {
