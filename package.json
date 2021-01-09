@@ -1,0 +1,36 @@
+{
+  "name": "js-grid-system",
+  "version": "1.0.0",
+  "description": "A simple and lightweight framework in vanilla js.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cwoolf123/JSGridSystem.git"
+  },
+  "keywords": [
+    "Framework",
+    "vanilla",
+    "js",
+    "JavaScript",
+    "Grid",
+    "System",
+    "Grid",
+    "ccoumns",
+    "rows",
+    "12",
+    "columns",
+    "bootstrap"
+  ],
+  "author": "Chris Woolf",
+  "license": "GPL-2.0-only",
+  "bugs": {
+    "url": "https://github.com/cwoolf123/JSGridSystem/issues"
+  },
+  "homepage": "https://github.com/cwoolf123/JSGridSystem#readme",
+  "dependencies": {
+    "np": "^7.2.0"
+  }
+}
