@@ -2,7 +2,7 @@
   "name": "js-grid-system",
   "version": "1.0.3",
   "description": "A simple and lightweight framework in vanilla js.",
-  "main": "index.js",
+  "main": "./js/jsgrid.js",
   "scripts": {
     "test": "echo \"No test specified\""
   },
